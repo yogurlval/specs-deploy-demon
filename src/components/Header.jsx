@@ -6,7 +6,7 @@ function Header() {
   const [text, setText] = useState([]);
 
   function getText() {
-    axios.get("http://localhost:4050/api/get").then((res) => {
+    axios.get("https://specs-deploy-demo.onrender.com/api/get").then((res) => {
       console.log(res.data);
       setText(res.data);
     });
